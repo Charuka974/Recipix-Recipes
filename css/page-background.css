@@ -1,0 +1,197 @@
+body {
+    background-size: cover;
+    background-color: #FAF8F5;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5%;
+
+}
+
+.recipe-image{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    object-position: center; /* Centers the image within the container */
+    display: block; 
+    /* Ensures the image behaves as a block element */
+    margin: 0 auto; 
+    /* Centers the image horizontally */
+    /* position: absolute;  */
+    /* Allows for vertical centering */
+    /* top: 50%;  */
+    /* Moves the image down by 50% of the viewport height */
+    /* left: 50%;  */
+    /* Moves the image right by 50% of the viewport width */
+    /* transform: translate(-50%, -50%); */
+    /* Adjusts the image position to center it perfectly */
+    margin-bottom: 4vh;
+}
+
+h1{
+    padding-top: 3%;
+    font-size: 2rem;
+    margin-bottom: 4vh;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-style: bold;
+    margin-left: 2%;
+    margin-bottom: 1vh;
+}
+
+h4{
+    font-size: 1rem;
+    font-style: bold;
+    margin-left: 2%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adds some spacing above and below */
+}
+
+
+footer{
+    padding-top: 10vh;
+}
+
+
+
+ol {
+    margin-left: 4%; /* Indent the list */
+    padding-left: 5%; /* Add padding for better spacing */
+    list-style-type: decimal; /* Ensure numbers are displayed */
+    font-size: 1rem; /* Set a readable font size */
+    line-height: 1.6; /* Improve readability with more line spacing */
+    color: #333; /* Use a dark color for better contrast */
+}
+
+/* Style list items */
+ol li {
+    margin-bottom: 10px; /* Add space between list items */
+    padding-left: 10px; /* Add padding to align text nicely */
+}
+
+/* Add a custom bullet or number style (optional) */
+ol li::marker {
+    font-weight: bold; /* Make numbers bold */
+    color: #e67e22; /* Add a custom color to the numbers */
+}
+
+/* Add a hover effect for better interactivity (optional) */
+ol li:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+/* -------------------------------------------------------- */
+
+.instructions {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 4%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    line-height: 1.6; /* Improve readability with more line spacing */
+    color: #333; /* Use a dark color for better contrast */
+}
+
+.instructions p {
+    margin-bottom: 1.5em; /* Add space between paragraphs */
+}
+
+/* Style for step numbers or headings (optional) */
+.instructions p strong {
+    font-weight: bold; /* Make step numbers or headings bold */
+    color: #e67e22; /* Add a custom color for emphasis */
+}
+
+/* Add a hover effect for better interactivity (optional) */
+.instructions p:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Add a border or divider between steps (optional) */
+.instructions p:not(:last-child) {
+    border-bottom: 1px solid #eee; /* Add a subtle divider between steps */
+    padding-bottom: 1em; /* Add padding to the divider */
+}
+
+/* Add a numbered list effect (optional) */
+.instructions {
+    counter-reset: step; /* Reset counter for steps */
+}
+
+.instructions p {
+    counter-increment: step; /* Increment counter for each paragraph */
+    position: relative;
+    padding-left: 2em; /* Add space for step numbers */
+}
+
+.instructions p::before {
+    content: counter(step) "."; /* Display step numbers */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #e67e22; /* Custom color for step numbers */
+}
+
+
+/* ------------------------------------- */
+
+table.body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF8F5; /* Soft warm white */
+    color: #333; /* Dark gray for readability */
+    text-align: center;
+    margin: 20px;
+}
+
+.nutrition-table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* Pure white for a clean look */
+    color: #333; /* Dark gray text */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nutrition-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8B4513; /* Warm brown for a subtle highlight */
+}
+
+.nutrition-table th, .nutrition-table td {
+    padding: 12px;
+    border: 1px solid #DDD; /* Light gray border */
+    text-align: left;
+}
+
+.nutrition-table thead {
+    background-color: #F0E6D2; /* Soft beige for a warm feel */
+    color: #5C4033; /* Dark brown for text contrast */
+}
+
+.nutrition-table tbody tr:nth-child(even) {
+    background-color: #F7F3E9; /* Very light beige for alternating rows */
+}
+
+.nutrition-table tbody tr:hover {
+    background-color: #EFE6D9; /* Slightly darker beige on hover */
+    transition: 0.3s;
+}

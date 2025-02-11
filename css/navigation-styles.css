@@ -1,0 +1,68 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: fixed;
+    width:  -webkit-fill-available;
+
+}
+
+/*---------------------------------------*/
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Apply hover effect to logo */
+.logo:hover {
+    color: #ff9800;
+    transform: scale(1.5); /* Slight zoom effect */
+}
+
+/*---------------------------------------*/
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    overflow: visible; /* Allow zoomed elements to overflow if needed */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block; /* Makes the anchor tag behave like a block element */
+    transform-origin: center;
+    position: relative; /* To ensure it layers correctly */
+    z-index: 1; /* Ensure it appears above other elements when zoomed */
+}
+
+/* Hover Effect with Zoom */
+.nav-links a:hover {
+    color: #ff9800;
+    transform: scale(1.5); /* Zoom more noticeably */
+    z-index: 2; /* Bring it above other elements when hovered */
+}

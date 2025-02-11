@@ -1,0 +1,25 @@
+
+    .nav-container {
+        display: flex; 
+        justify-content: center; /* Center items horizontally */
+        gap: 20px; /* Spacing between buttons */
+        margin-top: 20px;
+    }
+
+    .nav-button {
+        background-color: #ff9800; /* Orange color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Space between icon and text */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .nav-button:hover {
+        background-color: #e68900; /* Darker orange on hover */
+    }
