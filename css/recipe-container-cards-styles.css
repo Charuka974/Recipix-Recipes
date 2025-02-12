@@ -10,7 +10,7 @@
 /* Recipe Container */
 .recipe-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* makes it Responsive grid */
     gap: 20px;
     justify-content: center;
     padding: 20px;

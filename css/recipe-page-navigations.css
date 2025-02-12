@@ -23,3 +23,37 @@
     .nav-button:hover {
         background-color: #e68900; /* Darker orange on hover */
     }
+
+    
+    /* make the website responsive ------------------------------------------------ */
+
+    .nav-container {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        gap: 20px; /* Spacing between buttons */
+        margin-top: 20px;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+    
+    /* Make sure the buttons adjust properly on smaller screens */
+    @media screen and (max-width: 768px) {
+        .nav-container {
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: center; /* Center buttons */
+            gap: 10px; /* Reduce spacing for a compact look */
+        }
+    
+        .nav-button {
+            width: 80%; /* Make buttons take up more space */
+            text-align: center; /* Center text */
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .nav-button {
+            width: 90%; /* Make buttons even wider for smaller devices */
+            font-size: 16px; /* Slightly reduce font size */
+            padding: 12px; /* Adjust padding for better touch experience */
+        }
+    }
+    
