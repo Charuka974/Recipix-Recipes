@@ -1,190 +1,109 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    padding: 15px 30px;
-    border-radius: 30px;
-    position: fixed;
-    width:  -webkit-fill-available;
-
-}
-
-/*---------------------------------------*/
-.logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* Apply hover effect to logo */
-.logo:hover {
-    color: #ff9800;
-    transform: scale(1.5); /* Slight zoom effect */
-}
-
-/*---------------------------------------*/
-
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-    overflow: visible; /* Allow zoomed elements to overflow if needed */
-}
-
 .nav-links a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    display: inline-block; /* Makes the anchor tag behave like a block element */
-    transform-origin: center;
-    position: relative; /* To ensure it layers correctly */
-    z-index: 1; /* Ensure it appears above other elements when zoomed */
 }
 
-/* Hover Effect with Zoom */
-.nav-links a:hover {
-    color: #ff9800;
-    transform: scale(1.5); /* Zoom more noticeably */
-    z-index: 2; /* Bring it above other elements when hovered */
-}
-
-
-
-/* -------------------------------------------- */
-
-/* Reset default styles */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #33333355;
-    padding: 15px 30px;
-    border-radius: 30px;
-    position: fixed;
+header {
+    position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-/*---------------------------------------*/
-.logo {
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* Apply hover effect to logo */
-.logo:hover {
-    color: #ff9800;
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
-.navbar:hover.navbar {
-    background: white;
-}
-
-
-
-
-
-/* make the website responsive --------------------------------------- */
-
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
+    background-color: black;
+    color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
 }
-
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
 .nav-links li {
-    margin: 0 15px;
+    margin-right: 16px;
 }
 
-.nav-links a {
+#burger {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    transition: top 0.5s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-panel.active {
+    top: 0; 
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+.menu-panel ul li {
+    margin-bottom: 16px;
+}
+.menu-panel ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
 }
 
-/* Hover Effect */
-.nav-links a:hover {
+nav > ul > li > a{
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+nav > ul > li > a:hover{
     color: #ff9800;
     transform: scale(1.1);
     z-index: 2;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
-        
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        display: none; /* Hide by default */
-    }
-
-    .nav-links li {
-        margin: 10px 0; /* Space between stacked links */
-    }
-
-    /* Show the navigation when hovered */
-    .navbar:hover .nav-links {
-        display: flex;
-    }
-
-    .navbar:hover.navbar {
-        background: white;
-    }
-
+.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
-
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 1.2rem; /* Adjust logo size for small screens */
+  @media screen and (max-width: 575px) {
+    #burger {
+      display: block;
     }
-
-    .nav-links a {
-        font-size: 0.9rem; /* Reduce font size for mobile */
+    .navigation {
+      display: none;
+    }
+    .logo-container > h3 {
+      display: none;
+    }
+    .menu-panel.active {
+      right: 0;
     }
 }

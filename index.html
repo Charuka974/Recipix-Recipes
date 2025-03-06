@@ -12,50 +12,67 @@
     <link rel="stylesheet" href="/css/recipe-page-navigations.css">
     
     <link rel="icon" href="/assets/images/icons/cropped_image.png" />
-    
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
 </head>
 <body>
-    <header class="home-page-header">
-
-    </header>
 
     <header>
-        <nav class="navbar">
-            <div class="logo">Recipix</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo-container">
+          <img class="logo" src="/assets/images/icons/cropped_image.png" alt="logo" />
+          <h3>Recipix</h3>
+        </div>
+        <nav class="navigation">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
     </header>
+    <script src="/js/menu-nav-panel.js"></script>
 
-    <!-- Hero Section -->
     <section class="hero">
+        <br>
         <h1>Delicious Recipes</h1>
         <p>Discover tasty recipes for every occasion</p>
     </section>
 
     <main>
 
-        <!-- Home Section -->
         <section id="home">
             <h2>Welcome to Our Recipe Collection</h2>
             <p>Find the best homemade recipes, from appetizers to desserts.</p>
 
-            <!-- Search Bar -->
             <div class="search-container">
-                <input id="searchButton" type="search" placeholder="Find Recipes" required>
-                <button type="submit">
+                <input id="search-bar" type="text" placeholder="Find Recipes" required>
+                <button id="search-button" type="button">
                     <img src="/assets/images/icons/icons8-search-96 (1).png" alt="Search Icon" height="15px">
                 </button>
             </div>
+            <script src="/js/search.js"></script>
         </section>
 
 
-        <!-- Featured Recipes Section -->
         <section id="recipes" style="height: auto">
             <h2>Featured Recipes</h2>
 
@@ -126,13 +143,11 @@
             </div>
         </section>
         
-        <!-- About Us Section -->
         <section id="about">
             <h2>About Us</h2>
             <p>We are passionate about cooking and sharing amazing recipes that anyone can make.</p>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <form>
@@ -145,7 +160,6 @@
 
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Recipix Recipes. All Rights Reserved.</p>
         <div class="social-links">
@@ -154,6 +168,7 @@
             <a href="#"><img src="" alt="Twitter"></a>
         </div>
     </footer>
+
     
 </body>
 </html>
