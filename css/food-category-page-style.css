@@ -1,12 +1,18 @@
 h1 {
     font-size: 2.5rem;
-    text-align: center; /* Centers the text horizontally */
-    margin: 0 auto; /* Centers the element itself if it's a block element */
-    width: 100%; /* Ensures the h2 takes up the full width of its container */
+    text-align: center;
+    margin: 0;
     padding-top: 4.5%;
 }
 
 body{
     padding-top: 0.5%;
-
+    margin: 0;
+}
+.recipe-container{
+    grid-row: auto;
+}
+footer{
+    padding-top: 10vh;
+    text-align: center;
 }
