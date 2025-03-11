@@ -18,7 +18,7 @@ section {
     padding-top: 8%;
     background: #fff;
 }
-
+ 
 #home {
     padding-top: 6%;
     background: #f8f8f8;
@@ -66,4 +66,10 @@ button:hover {
     background: #e5533d;
 }
 
-
+footer{
+    text-align: center;
+}
+.social-link-image{
+    height: 40px;
+    width: 40px;
+}
