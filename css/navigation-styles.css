@@ -49,6 +49,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    left: 0;
 }
 
 .burger-btn{
@@ -92,13 +93,15 @@ header {
     font-size: 1rem;
 }
 
-nav > ul > li > a{
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-nav > ul > li > a:hover{
+nav  ul  li  a:hover{
     color: #ff9800;
-    transform: scale(1.1);
-    z-index: 2;
+
+}
+.logo-container > h3{
+    color: white;
+}
+.logo-container  h3:hover{
+    color: #ff9800;
 }
 
 @media screen and (max-width: 575px) {
@@ -110,8 +113,5 @@ nav > ul > li > a:hover{
     }
     .logo-container > h3 {
       display: none;
-    }
-    .menu-panel.active {
-      right: 0;
     }
 }
