@@ -12,9 +12,9 @@
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- HTML
+- CSS
+- JavaScript
 
 ## 🚀 Checkout the website
 https://recipix-recipes.web.app/
